@@ -1,10 +1,9 @@
 
-
 public class ejercicioArrays {
     // private static metodos objMetodos = new metodos();
     private static int cantidadMaxima = 0;
     private static int arrayNumeros[];
-    // puden contener de 0 a la cantidad máxima de caracteres
+    // puede contener de 0 a la cantidadMaxima
     private static int arrayApoyo[];
 
     public static void main(String[] args) throws Exception {
@@ -17,7 +16,7 @@ public class ejercicioArrays {
             System.out.println("\n=================================================");
             System.out.println("======================MENU=======================");
             System.out.println("=================================================");
-            System.out.println("(1)......Crear/indicar la dimensión del Array");
+            System.out.println("(1)......Crear Array /Indicar su dimensión");
             System.out.println("(2)......Ingrese datos al Array");
             System.out.println("(3)......Ordenar y mostrar Array ascendentemente");
             System.out.println("(4)......Ordenar y mostrar Array descendentemente");
@@ -27,25 +26,26 @@ public class ejercicioArrays {
             System.out.println("(8)......Salir");
             int eleccion = obtenerDatos.obtenerInt("Su selección: ");
 
-            //filtro 001
+            // filtro 001
             if (eleccion < 1 || eleccion > 8) {// fuera del rango del menú
                 System.out.println("\nError!, debe seleccionar un número de entre el 1 al 8");
                 continue;
             } // fuera del rango del menú
 
-            //filtro 002
-            if (cantidadMaxima <= 0 && eleccion != 1 && eleccion != 8) {// no hay array definido---------------------------------
+            // filtro 002
+            if (cantidadMaxima <= 0 && eleccion != 1 && eleccion != 8) {// no hay array
+                                                                        // definido---------------------------------
                 System.out.println("\nError!, primero debe de Crear/indicar la dimensión del array");
                 continue;
             }
-                        
+
             // se abre el menú
             switch (eleccion) {
                 case 1:// reiniciar, indicar la dimensión del array
-                    cantidadMaxima = metodos.definirArray();//se obtiene la dimensión del array
+                    cantidadMaxima = metodos.definirArray();// se obtiene la dimensión del array
                     arrayNumeros = new int[cantidadMaxima];// se declara el array con la dimensión requerida
                     break;
-                case 2:// se procede al llenado del 
+                case 2:// se procede al llenado del
                     arrayNumeros = metodos.llenarArray(cantidadMaxima, arrayNumeros);
                     break;
                 case 3:// ordenar ascendente
@@ -78,4 +78,4 @@ public class ejercicioArrays {
         System.out.println("\nSaliendo...\n\n");
 
     }// método menú
-}
+}//clase principal

@@ -1,10 +1,6 @@
 
 public class metodos {
-    // MÉTODOS MÉTODOS MÉTODOS MÉTODOS MÉTODOS MÉTODOS MÉTODOS
-
-    public metodos() {
-
-    }// constructor
+    // MÉTODOS       MÉTODOS         MÉTODOS         MÉTODOS         MÉTODOS         MÉTODOS
 
     public static int definirArray() {
         int dimension = 0;
@@ -15,7 +11,7 @@ public class metodos {
             }
         } while (dimension <= 0);// entra al bucle cuando hay errores
         return dimension;
-    }//definir
+    }// definir
 
     public static int[] llenarArray(int dimension, int arrayParaLlenar[]) {
         System.out.println("\nPor favor ingrese los " + dimension + " datos: ");
@@ -24,7 +20,7 @@ public class metodos {
             arrayParaLlenar[e] = obtenerDatos.obtenerInt("Ingrese el dato " + (e + 1) + ": ");
         } // for llena el array
         return arrayParaLlenar;
-    }//llenar
+    }// llenar
 
     public static int[] ordenarAscendente(int arrayPasado[]) {
         int apoyo;
