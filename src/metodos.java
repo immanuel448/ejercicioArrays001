@@ -22,28 +22,36 @@ public class metodos {
         return arrayParaLlenar;
     }// llenar
 
+    //número más pequeño a la izquierda
     public static int[] ordenarAscendente(int arrayPasado[]) {
         int apoyo;
-        for (int e = 0; e < arrayPasado.length - 1; e++) {
-            for (int i = 0; i < arrayPasado.length - 1; i++) {
-                if (arrayPasado[i] > arrayPasado[i + 1]) {// se debe intercambiar el número
-                    apoyo = arrayPasado[i];
-                    arrayPasado[i] = arrayPasado[i + 1];
-                    arrayPasado[i + 1] = apoyo;
+        //la dimensión es -1 para no afectar al siguiente for
+        for (int uno = 0; uno < arrayPasado.length - 1; uno++) {
+            //el segundo for ya no revisará las posiciones pasadas del primer for
+            for (int dos = uno + 1; dos < arrayPasado.length; dos++) {
+                //siempre se evalúa el dato en curso del primer for
+                if (arrayPasado[uno] > arrayPasado[dos]) {// se debe intercambiar el número
+                    apoyo = arrayPasado[dos];
+                    arrayPasado[dos] = arrayPasado[uno];
+                    arrayPasado[uno] = apoyo;
                 }
             }
         }
         return arrayPasado;
     }// ascendente
 
+    //número más grande a la izquierda
     public static int[] ordenarDescendente(int arrayPasado[]) {
         int apoyo;
-        for (int e = 0; e < arrayPasado.length - 1; e++) {
-            for (int i = 0; i < arrayPasado.length - 1; i++) {
-                if (arrayPasado[i] < arrayPasado[i + 1]) {// se debe intercambiar el número
-                    apoyo = arrayPasado[i];
-                    arrayPasado[i] = arrayPasado[i + 1];
-                    arrayPasado[i + 1] = apoyo;
+        //la dimensión es -1 para no afectar al siguiente for
+        for (int uno = 0; uno < arrayPasado.length - 1; uno++) {
+            //el segundo for ya no revisará las posiciones pasadas del primer for
+            for (int dos = uno + 1; dos < arrayPasado.length; dos++) {
+                //siempre se evalúa el dato en curso del primer for
+                if (arrayPasado[uno] < arrayPasado[dos]) {// se debe intercambiar el número
+                    apoyo = arrayPasado[dos];
+                    arrayPasado[dos] = arrayPasado[uno];
+                    arrayPasado[uno] = apoyo;
                 }
             }
         }
