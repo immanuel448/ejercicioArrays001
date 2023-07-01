@@ -35,7 +35,7 @@ public class ejercicioArrays {
             // filtro 002
             if (cantidadMaxima <= 0 && eleccion != 1 && eleccion != 8) {// no hay array
                                                                         // definido---------------------------------
-                System.out.println("\nError!, primero debe de Crear/indicar la dimensión del array");
+                System.out.println("\nError!, primero debe de Crear Array /Indicar su dimensión");
                 continue;
             }
 

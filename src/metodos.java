@@ -88,7 +88,7 @@ public class metodos {
         return soloImpares;
     }// impares
 
-    // ordenar ascendente
+    // mostrar datos
     public static void mostrarDatos(int arrayRecibido[], String mensaje) {
         System.out.println("\n+  +  +  +  +  +  +  +  +  +  +  +  +  +  +  +");
         System.out.println(mensaje);
