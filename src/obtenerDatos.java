@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 /*
-* se piden datos desde la consola (como String), de ahí se puede obtener un String o un int (aquí se atrapan los erroes))
+Se piden datos desde la consola (como String), SE REGRESA UN string O UN integer
+aquí se atrapan los erroes
+y se asegura deobtener el dato mediante bucles
 */
 
 public class obtenerDatos {
@@ -21,12 +23,17 @@ public class obtenerDatos {
     }
 
     public static int obtenerInt(String mensaje){//requiere de un mensaje, devuelve un Integer
-        try {
-            obtenerInt = Integer.parseInt(obtenerDatoString(mensaje));
-            return obtenerInt;
-        } catch (Exception e) {
-            return -0;
-        }
+        boolean bucle = false;
+        do {
+            try {
+                obtenerInt = Integer.parseInt(obtenerDatoString(mensaje));
+                bucle = false;
+            } catch (Exception e) {
+                System.out.print("ERROR, dato inválido, reingrese. ");//no es un número entero
+                bucle = true;
+            }
+        } while (bucle);
+        return obtenerInt;
     }
 
     public static String obtenerString(String mensaje){//requiere de un mensaje, devuelve un String
