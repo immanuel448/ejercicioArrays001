@@ -1,10 +1,10 @@
-# Ejercicio con Arrays en **Java**
+# Ejercicio con Arrays en Java
 
-El proyecto pide una colección de números enteros con varias opciones para su manipulación. 
+El proyecto pide una colección de números enteros brindando algunas opciones para su manipulación. 
 
 ## OPCIONES DEL PROYECTO
 
-* Crear Array / Indicar su dimención.
+* Crear Array / Indicar su dimensión.
 * Ingreso de datos al Array.
 * Ordenar y mostrar Array ascendentemente.
 * Ordenar y mostrar Array Descendentemente.
@@ -13,5 +13,6 @@ El proyecto pide una colección de números enteros con varias opciones para su 
 * Mostrar el Array.
 * Salir
 
-
+## SE HA BUSCADO...
+Ofrecer un proyecto libre de errores y de fácil manejo, para esto se ha hecho uso tanto de excepciones, como de mensajes personalizados para indicar los posibles conflictos ayudando a su corrección.  
 
